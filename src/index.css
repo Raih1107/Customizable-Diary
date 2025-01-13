@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html, #root {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+    overflow-x: hidden;
+    /* align-items: center; */
+
+  }
+  
+  .diary-container {
+    width: 70%;
+    height: 70vh;
+  }
+  
+  .sidebar {
+    display: flex;
+    /* flex-direction: column; */
+    align-self: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    display: none;
+  }
+  
+/* Default styling for color buttons */
+.color-picker {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-button.active {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2); /* Highlight active color */
+  }
+
+@media screen and (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-bottom: 10px;
+      justify-content: space-evenly;
+      
+    }
+  
+    .diary-container {
+      width: 100%;
+    }
+
+    h3{
+        display: none;
+    }
+    
+}
+
+/* Default styling for color buttons */
+.color-picker {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-button.active {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2); /* Highlight active color */
+  }
+  
+  /* Responsiveness: Adjust size based on screen width */
+  @media (max-width: 768px) {
+    .color-button {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .color-button {
+      width: 35px;
+      height:35px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .color-button {
+      width: 25px;
+      height:25px;
+    }
+  }
+  
+
+  @media (max-width: 320px) {
+    .color-button {
+      width: 20px;
+      height:20px;
+    }
+  }
+  
